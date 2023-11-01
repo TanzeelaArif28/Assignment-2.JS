@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment#2</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;"><b><u>Assignment of Chapter 3 and 4</b></u></h1>
+    <ul style="text-decoration: none;"></ul>
+<li><a href="./Exercise3/ex3.html">Exercise#3</a></li>
+<li><a href="./Exercise4/ex4.html">Exercise#4</a></li>
+    <h2>Self-Check Quiz Exercise#3</h2> 
+Qno.1 
+Can you use const and update values within an array?  <br />
+<b>Answer:Yes, we can use const and update values with an array.</b>  <br />
+Qno.2 
+Which property in an array gives the number of items contained in the array? <br />
+<b>Answer:Length property</b>  <br />
+Qno.3 
+What is the output in the console?
+const myArr1 = [1,3,5,6,8,9,15];
+console.log(myArr1.indexOf(0));
+console.log(myArr1.indexOf(3));  <br />
+<b>Answer:-1</b> <br />
+        <b>1</b>  <br />
+Qno.4 
+How do you replace the second element in an array myArr =[1,3,5,6,8,9,15] with the value 4?  <br />
+<b>Answer:myArr[1] = 4;</b>   <br />
+Qno.5 
+What is the output in the console?
+const myArr2 = [];
+myArr2[10] = 'test'
+console.log(myArr2);
+console.log(myArr2[2]);  <br />
+<b>Answer:undefined</b> <br />
+Qno.6 
+What is the output in the console?
+const myArr3 = [3,6,8,9,3,55,553,434];
+myArr3.sort();
+myArr3.length = 0;
+console.log(myArr3[0]);  <br />
+<b>Answer:undefined </b>  <br />
+                  
+
+    <h2>Self-Check Quiz Exercise#4</h2> 
+Qno:1
+const q = '1';
+switch (q) {
+case '1':
+answer = "one";
+break;
+case 1:
+answer = 1;
+break;
+case 2:
+answer = "this is the one";
+break;
+default:
+answer = "not working";
+}
+console.log(answer); <br />
+<b>Answer: One</b> <br />
+Qno:2
+const q = 1;
+switch (q) {
+case '1':
+answer = "one";
+case 1:
+answer = 1;
+case 2:
+answer = "this is the one";
+break;
+default:
+answer = "not working";
+}
+console.log(answer); <br />
+<b>Answer: this is the one</b>  <br />
+Qno:3
+let login = false;
+let outputHolder = "";
+let userOkay = login ? outputHolder = "logout" : outputHolder =
+"login";
+console.log(userOkay);  <br /> 
+<b>Answer: login</b>    <br />
+Qno:4
+const userNames = ["Mike", "John", "Larry"];
+const userInput = "John";
+let htmlOutput = "";
+if (userNames.indexOf(userInput) > -1) {
+htmlOutput = "Welcome, that is a user";
+} else {
+htmlOutput = "Denied, not a user ";
+}
+console.log(htmlOutput + ": " + userInput);   <br /> 
+<b>Answer: Welcome, that is a user: John</b>      <br />
+Qno:5
+let myTime = 9;
+let output;
+if (myTime >= 8 && myTime < 12) {
+output = "Wake up, it's morning";
+} else if (myTime >= 12 && myTime < 13) {
+output = "Go to lunch";
+} else if (myTime >= 13 && myTime <= 16) {
+output = "Go to work";
+} else if (myTime > 16 && myTime < 20) {
+output = "Dinner time";
+} else if (myTime >= 22) {
+output = "Time to go to sleep";
+} else {
+output = "You should be sleeping";
+}
+console.log(output);     <br />
+<b>Answer: Wake up, it's morning </b>     <br />
+Qno:6
+let a = 5;
+let b = 10;
+let c = 20;
+let d = 30;
+console.log(a > b || b > a);
+console.log(a > b && b > a);
+console.log(d > b || b > a);
+console.log(d > b && b > a);    <br />
+<b>Answer: true
+        false
+        true
+        true </b>    <br />
+Qno:7
+let val = 100;
+let message = (val > 100) ? `${val} was greater than 100` :
+`${val} was LESS or Equal to 100`;
+console.log(message);
+let check = (val % 2) ? `Odd` : `Even`;
+check = `${val} is ${check}`;
+console.log(check);   <br />
+<b>Answer: 100 was LESS or Equal to 100 <br />
+        100 is Even</b>    <br />
+</body>
+</html>
